@@ -3,20 +3,20 @@
 const { spawn } = require("child_process");
 const fs = require("fs");
 
-let folderName = '.';
+let nomDossier = '.';
 
 if (process.argv.length >= 3) {
-  folderName = process.argv[2];
-  if (!fs.existsSync(folderName)) {
-    fs.mkdirSync(folderName);
+  nomDossier = process.argv[2];
+  if (!fs.existsSync(nomDossier)) {
+    fs.mkdirSync(nomDossier);
   }
 }
 
-const clone = spawn("git", ["clone", "https://github.com/rustwasm/create-wasm-app.git", folderName]);
+const clone = spawn("git", ["clone", "https://github.com/Jimskapt/create-wasm-app-fr.git", nomDossier]);
 
 clone.on("close", code => {
   if (code !== 0) {
-    console.error("cloning the template failed!")
+    console.error("le clonage du modèle a échoué !")
     process.exit(code);
   } else {
     console.log("🦀 Rust + 🕸 Wasm = ❤");

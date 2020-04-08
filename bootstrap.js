@@ -1,5 +1,5 @@
-// A dependency graph that contains any wasm must all be imported
-// asynchronously. This `bootstrap.js` file does the single async import, so
-// that no one else needs to worry about it again.
+// Un graphe de dépendance contenant un wasm qui doit être importé de manière
+// asynchrone. Ce fichier `bootstrap.js` procède à un seul import asynchrone,
+// pour ne plus s'en préoccuper ensuite.
 import("./index.js")
-  .catch(e => console.error("Error importing `index.js`:", e));
+  .catch(e => console.error("Erreur d'import de `index.js`:", e));

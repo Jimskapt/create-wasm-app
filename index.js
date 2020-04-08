@@ -1,3 +1,3 @@
-import * as wasm from "hello-wasm-pack";
+import * as wasm from "salut-wasm-pack";
 
-wasm.greet();
+wasm.saluer();
