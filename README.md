@@ -1,3 +1,5 @@
+*(🇬🇧 🇺🇸 it's the french translation of the npm package create-wasm-app)*
+
 <div align="center">
 
   <h1><code>create-wasm-app-fr</code></h1>

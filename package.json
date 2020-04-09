@@ -1,6 +1,6 @@
 {
   "name": "create-wasm-app-fr",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "create an app (in french) to consume rust-generated wasm packages",
   "main": "index.js",
   "bin": {
@@ -19,6 +19,8 @@
     "wasm",
     "rust",
     "webpack",
+    "hello-wasm-pack",
+    "salut-wasm-pack",
     "french",
     "francais",
     "français"
@@ -30,7 +32,7 @@
   },
   "homepage": "https://github.com/Jimskapt/create-wasm-app-fr#readme",
   "devDependencies": {
-    "salut-wasm-pack": "^0.1.0",
+    "salut-wasm-pack": "^1",
     "webpack": "^4.29.3",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5",
